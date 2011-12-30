@@ -21,14 +21,15 @@
 		4C1994E514AE72440032A50B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4C1994E614AE72440032A50B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4C1994E714AE72440032A50B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4C1994EA14AE72440032A50B /* SubPathAtPath-Info.plist */ = {isa = PBXFileReference; path = "SubPathAtPath-Info.plist"; sourceTree = "<group>"; };
+		4C1994EA14AE72440032A50B /* SubPathAtPath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubPathAtPath-Info.plist"; sourceTree = "<group>"; };
 		4C1994EC14AE72440032A50B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C1994EE14AE72440032A50B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C1994F014AE72440032A50B /* SubPathAtPath-Prefix.pch */ = {isa = PBXFileReference; path = "SubPathAtPath-Prefix.pch"; sourceTree = "<group>"; };
+		4C1994F014AE72440032A50B /* SubPathAtPath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubPathAtPath-Prefix.pch"; sourceTree = "<group>"; };
 		4C1994F214AE72440032A50B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4C1994F414AE72440032A50B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C1994F414AE72440032A50B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C1994F514AE72440032A50B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C1994F814AE72440032A50B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C1994FF14AE784D0032A50B /* SubPathAtPath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SubPathAtPath.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		4C1994E814AE72440032A50B /* SubPathAtPath */ = {
 			isa = PBXGroup;
 			children = (
+				4C1994FF14AE784D0032A50B /* SubPathAtPath.entitlements */,
 				4C1994F414AE72440032A50B /* AppDelegate.h */,
 				4C1994F514AE72440032A50B /* AppDelegate.m */,
 				4C1994F714AE72440032A50B /* MainMenu.xib */,
@@ -251,6 +253,8 @@
 		4C1994FD14AE72440032A50B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SubPathAtPath/SubPathAtPath.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SubPathAtPath/SubPathAtPath-Prefix.pch";
 				INFOPLIST_FILE = "SubPathAtPath/SubPathAtPath-Info.plist";
@@ -262,6 +266,8 @@
 		4C1994FE14AE72440032A50B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SubPathAtPath/SubPathAtPath.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SubPathAtPath/SubPathAtPath-Prefix.pch";
 				INFOPLIST_FILE = "SubPathAtPath/SubPathAtPath-Info.plist";

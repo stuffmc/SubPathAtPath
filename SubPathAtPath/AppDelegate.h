@@ -11,5 +11,8 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong) NSOpenPanel *openPanel;
+@property (strong) NSFileManager *fm;
+@property (strong) NSUserDefaults *defaults;
 
 @end
